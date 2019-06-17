@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="4" name="Test">
+    <classes>
+      <class name="com.qe.apiproject.maven_rapi.JsonPlaceHolderApiTest">
+      <methods>
+     <parameter name="userName" value="Samantha"/>
+     <parameter name="baseUrl" value="https://jsonplaceholder.typicode.com"/>
+      <include name="getCommentsAndValidateEmailAddress" />
+      </methods>
+     </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
